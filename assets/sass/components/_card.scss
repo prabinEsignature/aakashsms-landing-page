@@ -1,0 +1,154 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "sass:color";
+
+.card {
+  &.blog-card {
+    transition: $default-transition;
+
+    @include breakpoint-down(xxl) {
+      border-radius: 24px !important;
+    }
+
+    @include breakpoint-down(xl) {
+      border-radius: 20px !important;
+    }
+
+    @include breakpoint-down(lg) {
+      border-radius: 16px !important;
+    }
+
+    .card-img {
+      @include breakpoint-down(xxl) {
+        border-radius: 16px !important;
+      }
+
+      @include breakpoint-down(xl) {
+        border-radius: 12px !important;
+      }
+
+      @include breakpoint-down(lg) {
+        border-radius: 10px !important;
+      }
+    }
+
+    .card-metadata {
+      transition: $default-transition;
+
+      &-item {
+        transition: $default-transition;
+      }
+    }
+
+    &:hover {
+      background: color("primary-100") !important;
+    }
+
+    &.card-lg {
+      .card-img {
+        height: 408px;
+
+        @include breakpoint-down(lg) {
+          height: 360px;
+        }
+
+        @include breakpoint-down(md) {
+          height: 320px;
+        }
+
+        @include breakpoint-down(sm) {
+          height: 280px;
+        }
+
+        @include breakpoint-down(xs) {
+          height: 240px;
+        }
+      }
+    }
+
+    &.card-horizontal {
+      grid-template-columns: 240px auto;
+
+      @include breakpoint-down(xl) {
+        grid-template-columns: 200px auto;
+      }
+
+      @include breakpoint-down(sm) {
+        grid-template-columns: 100%;
+      }
+
+      .card-img {
+        height: 210px;
+
+        @include breakpoint-down(xl) {
+          height: 180px;
+        }
+
+        @include breakpoint-down(lg) {
+          height: 160px;
+        }
+
+        @include breakpoint-down(md) {
+          height: 140px;
+        }
+      }
+
+      .card-body {
+        padding: 28px 0 28px 28px !important;
+
+        @include breakpoint-down(xxl) {
+          padding: 24px 0 24px 24px !important;
+        }
+
+        @include breakpoint-down(xl) {
+          padding: 0 0 0 12px !important;
+        }
+      }
+    }
+
+    .card-img {
+      height: 278px;
+
+      @include breakpoint-down(md) {
+        height: 260px;
+      }
+
+      @include breakpoint-down(sm) {
+        height: 240px;
+      }
+
+      @include breakpoint-down(xs) {
+        height: 200px;
+      }
+    }
+
+    .card-tags {
+      left: 12px;
+      bottom: 12px;
+
+      .card-tag-item {
+        &:nth-child(1) {
+          background: rgba(12, 214, 138, 0.8);
+        }
+
+        &:nth-child(2) {
+          background: rgba(253, 52, 110, 0.8);
+        }
+      }
+    }
+  }
+}
+
+.card-metadata {
+  &-item {
+    &:first-child {
+      padding-left: 0 !important;
+    }
+
+    &:last-child {
+      padding-right: 0 !important;
+      border-right: 0 !important;
+    }
+  }
+}
