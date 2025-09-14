@@ -13,7 +13,7 @@
     border-radius: 8px !important;
     padding-left: 16px !important;
     padding-right: 16px !important;
-    color: color("onyx-500") !important;
+    color: color("gray") !important;
     box-shadow: none;
     font-weight: 500;
     outline: none;
@@ -23,7 +23,7 @@
       font-weight: 500;
       font-size: 16px;
       font-family: inherit;
-      color: color("gray-400") !important;
+      color: color("gray") !important;
 
       @include breakpoint-down(md) {
         font-size: 14px !important;
@@ -60,7 +60,7 @@
       font-weight: 500;
       font-size: 16px;
       font-family: inherit;
-      color: color("gray-400") !important;
+      color: color("gray") !important;
       transition: $default-transition;
 
       @include breakpoint-down(md) {
@@ -95,7 +95,7 @@
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
-  color: color("gray-700");
+  color: color("night");
   margin-bottom: 0 !important;
 
   @include breakpoint-down(md) {
@@ -215,7 +215,7 @@
 
 input:-webkit-autofill {
   -webkit-background-clip: text !important;
-  -webkit-text-fill-color: color("onyx-500");
+  -webkit-text-fill-color: color("night");
   transition: background-color 5000s ease-in-out 0s;
   box-shadow: 0 0 0px 1000px color("white") inset;
   -webkit-box-shadow: 0 0 0px 1000px color("white") inset;
@@ -242,7 +242,7 @@ input:-webkit-autofill {
     input {
       &.form-control {
         &::placeholder {
-          color: color("onyx-300");
+          color: color("gray");
           font-weight: 500;
         }
       }
