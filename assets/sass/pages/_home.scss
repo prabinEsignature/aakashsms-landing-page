@@ -64,3 +64,30 @@ $page-top-spacing-desktop: 100px;
     }
   }
 }
+
+.asms-sms-features{
+  .sms-features-split{
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+
+.asms-textline-workflow{
+  .textline-workflow{
+    padding-top: 60px;
+    max-width: 1312px!important;
+
+    &-line{
+      top: -10px;
+      max-width: 1380px;
+    }
+
+    &-icon{
+      position: relative;
+      width: 86px;
+      height: 86px;
+      border: 2px dashed  color("primary");
+      border-radius: 100%;
+    }
+  }
+}
