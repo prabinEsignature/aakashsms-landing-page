@@ -29,7 +29,6 @@ body {
 %text-base {
   font-family: map.get($text-config, "font-family");
   font-weight: map.get($text-config, "font-weight");
-  color: map.get($text-config, "color");
   letter-spacing: map.get($text-config, "letter-spacing");
 }
 
@@ -197,7 +196,6 @@ $text-sizes: (
   h4.text-#{$text-class},
   h5.text-#{$text-class},
   h6.text-#{$text-class} {
-    font-family: $font-family-dm-sans;
     letter-spacing: map.get($headings-config, "letter-spacing") !important;
   }
 }
@@ -222,16 +220,6 @@ $text-sizes: (
     }
   }
 }
-
-// @each $heading, $size-map in $heading-sizes {
-//   #{$heading},
-//   .#{$heading}{
-//     @include heading-font-sizes($size-map);
-//     & {
-//       margin-top: 12px;
-//     }
-//   }
-// }
 
 // Paragraph Styles
 p {

@@ -3,4 +3,20 @@
 @use "../abstracts/mixins" as *;
 @use "../mixins/scrollbar" as *;
 
+$page-top-spacing-desktop: 100px;
 
+.page-top-spacing {
+  padding-top: $page-top-spacing-desktop;
+}
+
+.asms-home-banner {
+  background: linear-gradient(to bottom, #ffffff 0%, #e9f2ed 89%);
+
+  .home-banner-trust{
+    max-width: 1064px;
+
+    .trust-item{
+     
+    }
+  }
+}

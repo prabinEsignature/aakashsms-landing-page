@@ -5,13 +5,38 @@
 @use "../mixins/scrollbar" as *;
 
 // NAVBAR
-$navbar-height-desktop: 80px;
-$navbar-height-mobile: 80px;
+$navbar-height-desktop: 100px;
+$navbar-height-mobile: 100px;
 $navbar-bg: transparent;
 $navbar-link-color: $night;
 $navbar-hover-link-color: color.adjust($night, $lightness: -10%);
 $z-index-navbar: 1000;
 $z-index-navbar-toggler: 1010;
+
+.asms-navbar {
+  min-height: $navbar-height-desktop;
+  background: $navbar-bg;
+  z-index: $z-index-navbar;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  .asms-logo {
+    max-width: 200px;
+  }
+
+  .asms {
+    &-navbar-menu {
+    }
+
+    &-menu-link {
+      &.active {
+        color: color("primary") !important;
+      }
+    }
+  }
+}
 
 .custom-fixed-util {
   position: fixed !important;

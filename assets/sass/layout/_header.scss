@@ -3,15 +3,3 @@
 @use "../abstracts/mixins" as *;
 
 $z-index-header: 1000;
-
-.page-top-spacing {
-  margin-top: 90px;
-
-  @include breakpoint-down(xl) {
-    margin-top: 80px;
-  }
-
-  @include breakpoint-down(sm) {
-    margin-top: 68px;
-  }
-}

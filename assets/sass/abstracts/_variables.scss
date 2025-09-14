@@ -6,8 +6,7 @@
 $font-family-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans",
   "Droid Sans", "Helvetica Neue", sans-serif;
 $font-family-default: $font-family-system;
-$font-family-dm-sans: "DM Sans", sans-serif;
-$font-family-instrument-sans: "Instrument Sans", sans-serif;
+$font-family-karla: "Karla", sans-serif;
 
 // FONT CONFIGURATION
 $font-sizes: (
@@ -43,12 +42,12 @@ $font-weights: (
 );
 
 // BASE FONT
-$font-family-base: $font-family-instrument-sans;
+$font-family-base: $font-family-karla;
 $font-weight-base: map.get($font-weights, "semibold");
 $font-size-base: map.get($font-sizes, "base");
 // LEADING & TRACKING
 $leading-base: 1.4;
-$tracking-base: 0em;
+$tracking-base: -0.03em;
 
 // MEDIA BREAKPOINTS
 $breakpoints-up: (
@@ -98,11 +97,11 @@ $paragraph-margin-bottom: 0;
 // HEADINGS CONFIGURATION MAP
 $headings-config: (
   "margin-bottom": 0,
-  "font-family": $font-family-dm-sans,
+  "font-family": $font-family-karla,
   "font-weight": map.get($font-weights, "bold"),
   "line-height": 1.2,
   "color": $night,
-  "letter-spacing": -0.03em,
+  "letter-spacing": -0.06em,
   "font-sizes": (
     "h1": 2.5 * $font-size-base,
     // Main post/page title
@@ -114,8 +113,7 @@ $headings-config: (
     // Smaller heading
     "h5": 1.25 * $font-size-base,
     // Minor heading
-    "h6": 1.1 * $font-size-base 
-    // Smallest heading
+    "h6": 1.1 * $font-size-base // Smallest heading
   )
 );
 
@@ -155,4 +153,4 @@ $default-transition: all $default-transition-timing $default-transition-duration
 
 $img-path: "../../../assets/images/" !default; // Usage: background: url('#{$img-path}/img.jpg') 0 0 no-repeat;
 $icon-path: "../../../assets/icons/" !default;
-$max-width: 1440px;
+$max-width: 1360px;

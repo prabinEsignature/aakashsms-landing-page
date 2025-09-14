@@ -9,7 +9,7 @@ $btn-bg-color: map.get($colors, "primary");
 $btn-text-color: $white;
 $btn-font-weight: map.get($font-weights, "semibold");
 $btn-font-size: map.get($font-sizes, "base");
-$btn-padding-x: 24px;
+$btn-padding-x: 16px;
 $btn-padding-y: 8px;
 $btn-border-color: map.get($colors, "primary");
 $btn-border-width: 1px;
@@ -28,7 +28,15 @@ $button-variants: (
     border-color: color("primary"),
     hover-bg-color: color("night"),
     hover-text-color: color("white"),
-    hover-border-color: color("night"),
+    hover-border-color: color("night")
+  ),
+  "white-night-grey-2": (
+    bg-color: color("white"),
+    text-color: color("night"),
+    border-color: color("grey-2"),
+    hover-bg-color: color("white"),
+    hover-text-color: color("primary"),
+    hover-border-color: color("primary")
   )
 );
 
@@ -37,14 +45,14 @@ $button-link-variants: (
   "white": (
     text-color: color("white"),
     icon-color: color("white"),
-    hover-text-color: color.adjust(color("white"), $lightness: 10%),
-    hover-icon-color: color.adjust(color("white"), $lightness: 10%)
+    hover-text-color: color.adjust(color("white"), $lightness: -10%),
+    hover-icon-color: color.adjust(color("white"), $lightness: -10%)
   ),
   "primary": (
     text-color: color("primary"),
     icon-color: color("primary"),
-    hover-text-color: color.adjust(color("primary"), $lightness: 10%),
-    hover-icon-color: color.adjust(color("primary"), $lightness: 10%)
+    hover-text-color: color.adjust(color("primary"), $lightness: -10%),
+    hover-icon-color: color.adjust(color("primary"), $lightness: -10%)
   )
 );
 
@@ -52,7 +60,7 @@ $button-link-variants: (
   @extend %flex-inline-center;
   text-align: center;
   font-weight: $btn-font-weight;
-  font-family: $font-family-instrument-sans;
+  font-family: $font-family-karla;
   font-size: $btn-font-size;
   border-radius: $btn-border-radius;
   column-gap: 8px;
@@ -121,6 +129,11 @@ $button-link-variants: (
   // BUTTON INNER ELEMENTS
   &-text {
     font-weight: $btn-font-weight;
+    transition: $default-transition;
+  }
+
+  &-icon{
+    transition: $default-transition;
   }
 
   &.btn-rounded {
@@ -128,11 +141,11 @@ $button-link-variants: (
     gap: 24px;
     justify-content: space-between;
 
-    @include breakpoint-down(lg){
+    @include breakpoint-down(lg) {
       gap: 20px;
     }
 
-    @include breakpoint-down(sm){
+    @include breakpoint-down(sm) {
       gap: 16px;
     }
   }
@@ -161,6 +174,7 @@ $button-link-variants: (
     height: 52px;
     min-width: 146px;
     font-size: map.get($font-sizes, "lg") !important;
+    border-width: 1.5px;
 
     @include breakpoint-down(lg) {
       height: 48px;
@@ -173,6 +187,20 @@ $button-link-variants: (
 
     @include breakpoint-down(sm) {
       height: 40px;
+    }
+  }
+
+  &.btn-base {
+    font-size: map.get($font-sizes, "base") !important;
+    height: 40px;
+
+    @include breakpoint-down(md) {
+      height: 36px;
+      font-size: map.get($font-sizes, "sm") !important;
+    }
+
+    @include breakpoint-down(sm) {
+      height: 34px;
     }
   }
 
@@ -216,7 +244,7 @@ $button-link-variants: (
   &.btn-quarter-wide {
     min-width: 220px;
 
-    @include breakpoint-down(sm){
+    @include breakpoint-down(sm) {
       min-width: auto;
     }
   }
@@ -236,7 +264,7 @@ $button-link-variants: (
       transition: $default-transition;
     }
 
-    .btn-icon{
+    .btn-icon {
       transition: $default-transition;
     }
 
@@ -277,22 +305,19 @@ $button-link-variants: (
 .btn-link {
   background: transparent !important;
   transition: $default-transition;
-  padding: 0 !important;
-  height: auto !important;
 
   &:hover {
-    padding: 0 !important;
     background: transparent !important;
   }
 }
 
 @each $variant, $props in $button-link-variants {
   .btn-link-#{$variant} {
-    color: map.get($props, text-colo) !important;
+    color: map.get($props, text-color) !important;
     border: 0;
 
     .btn-text {
-      color: map.get($props, text-colo) !important;
+      color: map.get($props, text-color) !important;
     }
 
     .btn-icon {
@@ -315,10 +340,10 @@ $button-link-variants: (
 
 // MISC BUTTON STYLINGS
 .icon-btn {
-  display: inline-flex!important;
-  align-items: center!important;
-  justify-content: center!important;
-  padding: 0!important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
 
   &:hover {
     opacity: 0.8;

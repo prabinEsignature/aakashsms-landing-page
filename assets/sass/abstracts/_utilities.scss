@@ -66,7 +66,7 @@
 // ----------------------------------------
 // FONT STACK CLASSES
 $font-families: (
-  instrument-sans: $font-family-instrument-sans
+  karla: $font-family-karla
 );
 
 @mixin font-families($fonts) {
@@ -406,6 +406,7 @@ $spacing-values: (
   80: 80px,
   100: 100px,
   120: 120px,
+  140: 140px,
   160: 160px,
   200: 200px
 );
@@ -718,7 +719,8 @@ $shadows: (
 $leading: (
   "leading-6": 1.5rem, // 24px
   "leading-tight": 1.25,
-  "leading-snug": 1.375
+  "leading-snug": 1.375,
+  "leading-extra-tight": 1.1
 );
 
 @each $class, $value in $leading {
@@ -777,7 +779,7 @@ $tracking: (
 code {
   &.code-customized {
     white-space: break-spaces;
-    font-family: $font-family-instrument-sans;
+    font-family: $font-family-karla;
   }
 }
 

@@ -28,10 +28,10 @@ html {
   background-color: color("white");
 
   // Support prefers-color-scheme
-  @media (prefers-color-scheme: dark) {
-    background-color: color("black");
-    color: color("white");
-  }
+  // @media (prefers-color-scheme: dark) {
+  //   background-color: color("black");
+  //   color: color("white");
+  // }
 }
 
 body {
@@ -46,7 +46,7 @@ body {
   }
 }
 
-.page-wrapper {
+.asms-page-wrapper {
   position: relative;
   min-height: 100vh; 
 }
