@@ -16,11 +16,6 @@ $z-index-navbar-toggler: 1010;
 .asms-navbar {
   min-height: $navbar-height-desktop;
   background: $navbar-bg;
-  z-index: $z-index-navbar;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
 
   .asms-logo {
     max-width: 200px;
@@ -33,6 +28,10 @@ $z-index-navbar-toggler: 1010;
     &-menu-link {
       &.active {
         color: color("primary") !important;
+      }
+
+      &:hover{
+        color: $navbar-hover-link-color!important;
       }
     }
   }

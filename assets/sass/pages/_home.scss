@@ -12,11 +12,55 @@ $page-top-spacing-desktop: 100px;
 .asms-home-banner {
   background: linear-gradient(to bottom, #ffffff 0%, #e9f2ed 89%);
 
-  .home-banner-trust{
+  .home-banner-trust {
     max-width: 1064px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
 
-    .trust-item{
-     
+    .trust-item {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: calc(100% + 20px);
+        height: 80px;
+        width: 1px;
+        background: color("grey-3");
+        transform: translateY(-50%);
+      }
+
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.asms-sms-gateway {
+  padding-top: 100px;
+
+  .sms-gateway-split {
+    gap: 60px;
+  }
+}
+
+
+.asms-request-quote{
+  .request-quote-split{
+    grid-template-columns: 65% 35%;
+
+    &-form{
+      .form-custom{
+        .form-control{
+          &::placeholder{
+            text-transform: uppercase;
+          }
+        }
+      }
     }
   }
 }

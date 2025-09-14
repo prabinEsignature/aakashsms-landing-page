@@ -41,6 +41,13 @@
     #{$prefix}-#{$weight-name} {
       #{$property}: $weight !important;
     }
+    #{$prefix}-#{$weight-name} {
+      &.content-stylings {
+        & > * {
+          #{$property}: $weight !important;
+        }
+      }
+    }
   }
 }
 
@@ -72,7 +79,7 @@ $font-families: (
 @mixin font-families($fonts) {
   @each $font-name, $font-family in $fonts {
     .font-#{$font-name} {
-      font-family: $font-family!important;
+      font-family: $font-family !important;
     }
   }
 }
@@ -682,7 +689,6 @@ $border-widths: (
 $shadows: (
   "sm": 0 1px 2px 0 rgba(0, 0, 0, 0.05),
   "base": (
-    // Added a name for the default shadow
     0 1px 3px 0 rgba(0, 0, 0, 0.1),
     0 1px 2px -1px rgba(0, 0, 0, 0.1)
   ),
@@ -699,12 +705,7 @@ $shadows: (
     0 8px 10px -6px rgba(0, 0, 0, 0.1)
   ),
   "2xl": 0 25px 50px -12px rgba(0, 0, 0, 0.15),
-  "default": 0px 8px 24px 0px rgba(149, 157, 165, 0.1),
-  "inner": inset 0 2px 4px 0 rgba(0, 0, 0, 0.05),
-  "menu": 0 8px 16px 0 rgba(149, 157, 165, 0.1),
-  "light-brand-2": 0 20px 60px -12px rgba(33, 91, 128, 0.12),
-  "img": 0 30px 60px -12px rgba(50, 50, 93, 0.25),
-  "primary-700-10": 0 7px 29px 0 rgba(33, 91, 128, 0.1),
+  "default": 0px 4px 28px 0px rgba(0, 0, 0, 0.08),
   "none": none
 );
 
@@ -717,7 +718,8 @@ $shadows: (
 
 // LINE HEIGHTS
 $leading: (
-  "leading-6": 1.5rem, // 24px
+  "leading-6": 1.5rem,
+  // 24px
   "leading-tight": 1.25,
   "leading-snug": 1.375,
   "leading-extra-tight": 1.1

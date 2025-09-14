@@ -226,14 +226,6 @@ p {
   @extend %text-base;
 }
 
-.content-stylings {
-  ul,
-  ol,
-  dl {
-    @extend %text-base;
-  }
-}
-
 a {
   text-decoration: $link-decoration;
   color: $link-color; // or unset can be used
@@ -270,22 +262,24 @@ a {
 
   p,
   ul,
-  ol {
-    margin-bottom: 16px;
+  ol,
+  dl {
+    @extend %text-base;
+    margin-bottom: 20px;
   }
 
   ul {
     display: grid;
-    gap: 12px;
+    gap: 16px;
     padding-left: 0 !important;
     margin-left: 0 !important;
 
     @include breakpoint-down(xl) {
-      gap: 8px;
+      gap: 12px;
     }
 
     @include breakpoint-down(sm) {
-      gap: 6px;
+      gap: 8px;
     }
 
     li {
@@ -298,8 +292,13 @@ a {
         position: absolute;
         width: 24px;
         height: 24px;
-        background: url($icon-path + "circle_check_duotone_primary_icon.svg") center/contain no-repeat;
-        left: -40px;
+        background-image: url($icon-path + "check_primary_icon.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 14px;
+        left: -36px;
+        background-color: color("p-green-50");
+        border-radius: 4px;
       }
     }
   }

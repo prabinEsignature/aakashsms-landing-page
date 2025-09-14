@@ -37,6 +37,14 @@ $button-variants: (
     hover-bg-color: color("white"),
     hover-text-color: color("primary"),
     hover-border-color: color("primary")
+  ),
+  "outline-primary-grey-2": (
+    bg-color: transparent,
+    text-color: color("primary"),
+    border-color: color("grey-2"),
+    hover-bg-color: transparent,
+    hover-text-color: color("primary"),
+    hover-border-color: color("primary")
   )
 );
 
@@ -134,6 +142,7 @@ $button-link-variants: (
 
   &-icon{
     transition: $default-transition;
+    font-size: map.get($font-sizes, "sm");
   }
 
   &.btn-rounded {
@@ -155,6 +164,9 @@ $button-link-variants: (
     height: 58px;
     min-width: 150px;
     font-size: map.get($font-sizes, "lg") !important;
+    border-width: 1.5px!important;
+    padding-left: 20px;
+    padding-right: 20px;
 
     @include breakpoint-down(lg) {
       height: 52px;
@@ -174,7 +186,9 @@ $button-link-variants: (
     height: 52px;
     min-width: 146px;
     font-size: map.get($font-sizes, "lg") !important;
-    border-width: 1.5px;
+    border-width: 1.5px!important;
+    padding-left: 20px;
+    padding-right: 20px;
 
     @include breakpoint-down(lg) {
       height: 48px;
