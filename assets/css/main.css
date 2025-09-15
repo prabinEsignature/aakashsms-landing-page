@@ -23666,7 +23666,7 @@
 }
 
 .invert-to-black {
-  filter: invert(1) brightness(100);
+  filter: invert(1) brightness(0);
 }
 
 .invert-to-white {
@@ -24932,8 +24932,8 @@ a:visited, a:link {
   transition: all ease-in-out 300ms;
 }
 .btn-outline-white:hover, .btn-outline-white:focus, .btn-outline-white:disabled, .btn-outline-white:active, .btn-outline-white.disabled, .btn-outline-white.active {
-  background: transparent !important;
-  border-color: #3bb24a !important;
+  background: #ffffff !important;
+  border-color: #ffffff !important;
   color: #3bb24a !important;
 }
 .btn-outline-white:hover .btn-text, .btn-outline-white:focus .btn-text, .btn-outline-white:disabled .btn-text, .btn-outline-white:active .btn-text, .btn-outline-white.disabled .btn-text, .btn-outline-white.active .btn-text {
@@ -25623,6 +25623,89 @@ input:-webkit-autofill {
   }
 }
 
+.accordion-item {
+  margin-bottom: 20px;
+}
+@media (max-width: 991.98px) {
+  .accordion-item {
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 767.98px) {
+  .accordion-item {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .accordion-item {
+    margin-bottom: 8px;
+  }
+}
+.accordion-button {
+  transition: all ease-in-out 300ms;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 575.98px) {
+  .accordion-button {
+    padding: 8px 12px !important;
+  }
+}
+.accordion-button[aria-expanded=true] {
+  border-left-color: #3bb24a !important;
+  color: #121212 !important;
+}
+.accordion-button[aria-expanded=true] .accordion-button-icon {
+  transform: rotate(180deg);
+}
+.accordion-button::after {
+  display: none;
+}
+.accordion-button:hover {
+  color: #121212 !important;
+  border-color: #3bb24a !important;
+}
+.accordion-button:hover .accordion-button-icon {
+  background-color: #e9f2ed !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%233BB24A'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+.accordion-button-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23757575'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all ease-in-out 300ms;
+}
+@media (max-width: 991.98px) {
+  .accordion-button-icon {
+    width: 32px !important;
+    height: 32px !important;
+    min-width: 32px !important;
+    min-height: 32px !important;
+    background-size: 20px;
+  }
+}
+@media (max-width: 575.98px) {
+  .accordion-button-icon {
+    width: 28px !important;
+    height: 28px !important;
+    min-width: 28px !important;
+    min-height: 28px !important;
+    background-size: 16px !important;
+    border-radius: 4px !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .accordion-body {
+    padding-left: 12px !important;
+    padding-bottom: 8px !important;
+  }
+}
+.accordion-body p {
+  display: inline-block;
+}
+
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
@@ -25875,4 +25958,117 @@ input:-webkit-autofill {
 }
 .asms-dev-resource .dev-resource-split-tabs .tab-content .tab-pane::-webkit-scrollbar-thumb:hover {
   background-color: rgb(46.3037974684, 139.6962025316, 58.0759493671);
+}
+
+.asms-industries .industries-split {
+  gap: 80px;
+}
+@media (max-width: 991.98px) {
+  .asms-industries .industries-split {
+    gap: 60px;
+  }
+}
+@media (max-width: 575.98px) {
+  .asms-industries .industries-split {
+    gap: 40px;
+  }
+}
+@media (max-width: 479.98px) {
+  .asms-industries .industries-split {
+    gap: 24px;
+  }
+}
+.asms-industries .industries-split .accordion-item:last-child {
+  margin-bottom: 0 !important;
+}
+.asms-industries .industries-split .accordion-item:last-child .accordion-collapse {
+  border-radius: 0 !important;
+}
+.asms-industries .industries-split .industries-feature-item:hover {
+  color: #3bb24a !important;
+}
+.asms-industries .industries-split .industries-feature-item p:hover {
+  color: #3bb24a !important;
+}
+.asms-industries .business-companies {
+  gap: 100px;
+}
+@media (max-width: 991.98px) {
+  .asms-industries .business-companies {
+    gap: 12px !important;
+    flex-direction: column;
+  }
+}
+@media (max-width: 767.98px) {
+  .asms-industries .business-companies {
+    gap: 16px !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .asms-industries .business-companies {
+    gap: 12px !important;
+  }
+}
+.asms-industries .business-companies-text {
+  max-width: 223px;
+  margin-bottom: 0 !important;
+}
+@media (max-width: 991.98px) {
+  .asms-industries .business-companies-text {
+    text-align: center;
+    max-width: 100%;
+  }
+}
+.asms-industries .business-companies-logo {
+  max-width: 800px;
+}
+.asms-industries .business-companies-item img {
+  max-width: 150px;
+  filter: grayscale(1);
+  opacity: 0.7;
+  transition: all ease-in-out 300ms;
+}
+@media (max-width: 575.98px) {
+  .asms-industries .business-companies-item img {
+    max-width: 120px;
+  }
+}
+.asms-industries .business-companies-item:hover img {
+  filter: none;
+  opacity: 1;
+}
+@media (max-width: 767.98px) {
+  .asms-industries .business-companies-item {
+    width: calc(50% - 12px);
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 991.98px) {
+  .asms-industries .business-companies-list {
+    width: 100%;
+  }
+}
+@media (max-width: 767.98px) {
+  .asms-industries .business-companies-list {
+    flex-wrap: wrap;
+  }
+}
+
+.asms-presence .presence-item {
+  min-height: 42px;
+}
+.asms-presence .presence-item-text {
+  margin-left: 20px;
+}
+.asms-presence .presence-item-text::after {
+  content: "";
+  position: absolute;
+  right: calc(100% + 8px);
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(to right, #b6f600, #01df82);
+  border-radius: 100%;
+  top: 50%;
+  transform: translateY(-50%);
 }/*# sourceMappingURL=main.css.map */

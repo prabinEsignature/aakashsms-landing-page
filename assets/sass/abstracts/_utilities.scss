@@ -822,7 +822,7 @@ $tracking: (
 
 // invert
 .invert-to-black {
-  filter: invert(1) brightness(100);
+  filter: invert(1) brightness(0);
 }
 
 .invert-to-white {

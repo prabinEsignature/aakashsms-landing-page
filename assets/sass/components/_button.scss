@@ -50,9 +50,9 @@ $button-variants: (
     bg-color: transparent,
     text-color: color("white"),
     border-color: color("white"),
-    hover-bg-color: transparent,
+    hover-bg-color: color("white"),
     hover-text-color: color("primary"),
-    hover-border-color: color("primary")
+    hover-border-color: color("white")
   )
 );
 
