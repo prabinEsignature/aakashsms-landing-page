@@ -2,3 +2,21 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
+.asms-footer{
+  .footer-split{
+    gap: 60px;
+    grid-template-columns: 380px auto;
+    border-radius: 40px;
+
+    .links-block{
+      .links-list{
+        a{
+          transition: $default-transition;
+          &:hover{
+            color: color("primary")!important;
+          }
+        }
+      }
+    }
+  }
+}

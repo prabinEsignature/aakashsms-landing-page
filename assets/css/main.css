@@ -25800,6 +25800,18 @@ input:-webkit-autofill {
   right: 0;
 }
 
+.asms-footer .footer-split {
+  gap: 60px;
+  grid-template-columns: 380px auto;
+  border-radius: 40px;
+}
+.asms-footer .footer-split .links-block .links-list a {
+  transition: all ease-in-out 300ms;
+}
+.asms-footer .footer-split .links-block .links-list a:hover {
+  color: #3bb24a !important;
+}
+
 .page-top-spacing {
   padding-top: 100px;
 }
