@@ -45,6 +45,14 @@ $button-variants: (
     hover-bg-color: transparent,
     hover-text-color: color("primary"),
     hover-border-color: color("primary")
+  ),
+  "outline-white": (
+    bg-color: transparent,
+    text-color: color("white"),
+    border-color: color("white"),
+    hover-bg-color: transparent,
+    hover-text-color: color("primary"),
+    hover-border-color: color("primary")
   )
 );
 

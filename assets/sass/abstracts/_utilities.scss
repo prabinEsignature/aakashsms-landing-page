@@ -778,11 +778,10 @@ $tracking: (
   filter: invert(1) brightness(0);
 }
 
-code {
-  &.code-customized {
-    white-space: break-spaces;
-    font-family: $font-family-karla;
-  }
+.code-customized {
+  white-space: pre-wrap;
+  font-family: $font-family-karla;
+  overflow-wrap: break-word;
 }
 
 .resize-animation-stopper * {

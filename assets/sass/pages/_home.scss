@@ -2,6 +2,7 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 @use "../mixins/scrollbar" as *;
+@use "../abstracts/functions" as *;
 
 $page-top-spacing-desktop: 100px;
 
@@ -48,15 +49,14 @@ $page-top-spacing-desktop: 100px;
   }
 }
 
-
-.asms-request-quote{
-  .request-quote-split{
+.asms-request-quote {
+  .request-quote-split {
     grid-template-columns: 65% 35%;
 
-    &-form{
-      .form-custom{
-        .form-control{
-          &::placeholder{
+    &-form {
+      .form-custom {
+        .form-control {
+          &::placeholder {
             text-transform: uppercase;
           }
         }
@@ -65,35 +65,100 @@ $page-top-spacing-desktop: 100px;
   }
 }
 
-.asms-sms-features{
-  .sms-features-split{
+.asms-sms-features {
+  .sms-features-split {
     grid-template-columns: 1fr 2fr;
   }
 }
 
-
-.asms-textline-workflow{
-  .textline-workflow{
+.asms-textline-workflow {
+  .textline-workflow {
     padding-top: 60px;
-    max-width: 1312px!important;
+    max-width: 1312px !important;
 
-    &-line{
+    &-line {
       top: -10px;
       max-width: 1380px;
     }
 
-    &-icon{
+    &-icon {
       position: relative;
       width: 86px;
       height: 86px;
-      border: 2px dashed  color("primary");
+      border: 2px dashed color("primary");
       border-radius: 100%;
     }
   }
 }
 
-.asms-audience{
-  .audience-split{
+.asms-audience {
+  .audience-split {
     grid-template-columns: 3fr 2.5fr;
+  }
+}
+
+.asms-dev-resource {
+  .dev-resource-split {
+    grid-template-columns: 40% auto;
+
+    @include breakpoint-down(xxl) {
+      grid-template-columns: 30% auto;
+    }
+
+    @include breakpoint-down(xl) {
+      grid-template-columns: 100%;
+    }
+  }
+
+  .dev-resource-btns {
+    @include breakpoint-down(sm) {
+      gap: 8px !important;
+    }
+
+    .btn {
+      @include breakpoint-down(sm) {
+        flex: 1;
+      }
+    }
+  }
+
+  .dev-resource-split-tabs {
+    border: 1px solid white(0.2);
+
+    .nav-tabs {
+      @include breakpoint-down(sm) {
+        row-gap: 4px;
+      }
+
+      .nav-link {
+        border-top-left-radius: 12px !important;
+        border-top-right-radius: 12px !important;
+
+        @include breakpoint-down(sm) {
+          border-top-left-radius: 8px !important;
+          border-top-right-radius: 8px !important;
+          padding: 8px 10px !important;
+        }
+
+        &.active {
+          background: color("mdt-green-v3") !important;
+          color: color("primary") !important;
+        }
+      }
+    }
+
+    .tab-content {
+      border-top-right-radius: 0 !important;
+      border-top-left-radius: 0 !important;
+
+      @include breakpoint-down(sm) {
+        padding-top: 0 !important;
+      }
+
+      .tab-pane {
+        @include scrollbar("y");
+        max-height: 380px;
+      }
+    }
   }
 }
