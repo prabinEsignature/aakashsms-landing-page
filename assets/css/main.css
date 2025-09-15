@@ -25654,7 +25654,6 @@ input:-webkit-autofill {
 }
 .accordion-button[aria-expanded=true] {
   border-left-color: #3bb24a !important;
-  color: #121212 !important;
 }
 .accordion-button[aria-expanded=true] .accordion-button-icon {
   transform: rotate(180deg);
@@ -25665,10 +25664,6 @@ input:-webkit-autofill {
 .accordion-button:hover {
   color: #121212 !important;
   border-color: #3bb24a !important;
-}
-.accordion-button:hover .accordion-button-icon {
-  background-color: #e9f2ed !important;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%233BB24A'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
 }
 .accordion-button-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23757575'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
@@ -25695,15 +25690,6 @@ input:-webkit-autofill {
     background-size: 16px !important;
     border-radius: 4px !important;
   }
-}
-@media (max-width: 575.98px) {
-  .accordion-body {
-    padding-left: 12px !important;
-    padding-bottom: 8px !important;
-  }
-}
-.accordion-body p {
-  display: inline-block;
 }
 
 .video-wrapper {
@@ -26071,4 +26057,32 @@ input:-webkit-autofill {
   border-radius: 100%;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.asms-faq .segment-heading-img {
+  max-width: 80px;
+}
+.asms-faq .faq-split {
+  grid-template-columns: 28% auto;
+  max-width: 1200px;
+}
+.asms-faq .faq-split .accordion-item {
+  margin-bottom: 12px !important;
+}
+.asms-faq .faq-split .accordion-item .accordion-button:hover {
+  color: #3bb24a !important;
+}
+.asms-faq .faq-split .accordion-item:has(.accordion-button[aria-expanded=true]) {
+  background: #e9f2ed !important;
+  box-shadow: none !important;
+}
+.asms-faq .faq-split .accordion-item .content-stylings {
+  max-height: 200px;
+  margin-right: 7px;
+}
+.asms-faq .faq-split .accordion-item .content-stylings > *:last-child {
+  margin-bottom: 0 !important;
+}
+.asms-faq .faq-split .accordion-item .content-stylings ul li::before {
+  background-color: #ffffff;
 }/*# sourceMappingURL=main.css.map */
