@@ -91,3 +91,9 @@ $page-top-spacing-desktop: 100px;
     }
   }
 }
+
+.asms-audience{
+  .audience-split{
+    grid-template-columns: 3fr 2.5fr;
+  }
+}
