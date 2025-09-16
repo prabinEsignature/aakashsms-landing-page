@@ -8,6 +8,16 @@
     grid-template-columns: 380px auto;
     border-radius: 40px;
 
+    &::after{
+      content: "";
+      position: absolute;
+      background: url($img-path + "misc/footer_arrow_shape.svg") center/contain no-repeat;
+      width: 105px;
+      height: 104px;
+      top: calc(100% - 6px);
+      left: 148px;
+    }
+
     .links-block{
       .links-list{
         a{
@@ -18,5 +28,9 @@
         }
       }
     }
+  }
+
+  .footer-meta{
+    margin-left: 320px;
   }
 }
