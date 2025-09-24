@@ -1,0 +1,46 @@
+.asms-service-01-banner{
+  .service-01-split{
+    &-img{
+      img{
+        max-width: 440px;
+      }
+    }
+  }
+}
+
+.asms-svc-01-segment-01{
+  .svc-01-segment-01{
+    &-split{
+      &-content{
+        padding-left: 75px;
+      }
+    }
+  }
+}
+
+.asms-svc-01-segment-02{
+  .svc-01-segment-02{
+    &-split{
+      gap: 80px;
+    }
+  }
+}
+
+// SERVICE 2
+.asms-service-02-banner{
+  .service-02-split{
+    grid-template-columns: 60% auto;
+  }
+}
+
+.asms-svc-02-segment-02{
+  .cards-list{
+    max-width: 1080px;
+  }
+}
+
+.asms-service-03-banner{
+  .service-03-split{
+    grid-template-columns: 55% auto;
+  }
+}

@@ -30,7 +30,15 @@
     }
   }
 
+  .contacts-social-link{
+    &:hover{
+      scale: 1.1;
+    }
+  }
+
   .footer-meta{
     margin-left: 320px;
+    
+    
   }
 }

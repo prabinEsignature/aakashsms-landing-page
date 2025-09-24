@@ -316,17 +316,15 @@ $page-top-spacing-desktop: 100px;
       &:has(.accordion-button[aria-expanded="true"]) {
         background: color("p-green-50") !important;
         box-shadow: none !important;
+
+        .accordion-button {
+          color: color("primary") !important;
+        }
       }
 
       .content-stylings {
-        max-height: 200px;
+        max-height: 220px;
         margin-right: 7px;
-
-        > * {
-          &:last-child{
-            margin-bottom: 0!important;
-          }
-        }
 
         ul {
           li {

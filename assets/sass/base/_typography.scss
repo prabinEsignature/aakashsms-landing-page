@@ -244,6 +244,12 @@ a {
 .content-stylings {
   @extend %text-base;
 
+  > * {
+    &:last-child {
+      margin-bottom: 0 !important;
+    }
+  }
+
   &.remove-paragraph-padding {
     p {
       margin-bottom: 0 !important;
