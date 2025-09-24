@@ -256,6 +256,15 @@ a {
     }
   }
 
+  a{
+    color: color("primary")!important;
+    transition: $default-transition;
+
+    &:hover{
+      color: color("p-green-700")!important;
+    }
+  }
+
   h1,
   h2,
   h3,

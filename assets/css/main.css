@@ -24367,6 +24367,13 @@ a:visited, a:link {
 .content-stylings.remove-paragraph-padding p {
   margin-bottom: 0 !important;
 }
+.content-stylings a {
+  color: #3bb24a !important;
+  transition: all ease-in-out 300ms;
+}
+.content-stylings a:hover {
+  color: #269137 !important;
+}
 .content-stylings h1,
 .content-stylings h2,
 .content-stylings h3,
@@ -25060,6 +25067,10 @@ input[type=button].btn-block {
   height: 24px;
   border-radius: 100%;
   background: rgba(59, 178, 74, 0.1882352941);
+}
+
+.btn-downloads .btn-download {
+  max-width: 200px;
 }
 
 .checkbox {
