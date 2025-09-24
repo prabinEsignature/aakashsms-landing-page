@@ -26187,4 +26187,8 @@ input:-webkit-autofill {
 
 .asms-service-03-banner .service-03-split {
   grid-template-columns: 55% auto;
+}
+
+.asms-service-04-banner .service-04-split {
+  grid-template-columns: 55% auto;
 }/*# sourceMappingURL=main.css.map */
