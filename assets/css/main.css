@@ -25397,6 +25397,12 @@ input[type=button].btn-block {
   margin-right: auto;
   width: 100%;
 }
+.segment-heading.mx-w-900 {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
 
 .form-custom .form-select, .form-custom .form-control {
   height: 52px !important;
@@ -26191,4 +26197,30 @@ input:-webkit-autofill {
 
 .asms-service-04-banner .service-04-split {
   grid-template-columns: 55% auto;
+}
+
+.asms-svc-04-segment-03 .svc-04-segment-03-split {
+  grid-template-columns: 37% auto;
+}
+
+.numbered-content-list .numbered-content-item::after {
+  content: "";
+  position: absolute;
+  top: 52px;
+  left: 26px;
+  height: 100%;
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-repeat: round;
+  border-image-source: url("data:image/svg+xml,%3Csvg%20width%3D%2214%22%20height%3D%2214%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M0%200%20H%205%20V%201%20H%201%20V%205%20H%200%20V%200%22%20fill%3D%22rgb(129%2C212%2C250)%22%20%2F%3E%3Cpath%20d%3D%22M14%200%20V%205%20H%2013%20V%201%20H%209%20V%200%20H%2014%22%20fill%3D%22rgb(129%2C212%2C250)%22%20%2F%3E%3Cpath%20d%3D%22M14%2014%20H%209%20V%2013%20H%2013%20V%209%20H%2014%20V%2014%22%20fill%3D%22rgb(129%2C212%2C250)%22%20%2F%3E%3Cpath%20d%3D%22M0%2014%20V%209%20H%201%20V%2013%20H%205%20V%2014%20H%200%22%20fill%3D%22rgb(129%2C212%2C250)%22%20%2F%3E%3C%2Fsvg%3E");
+  /* Creates a custom dashed border
+     https://codepen.io/eHtmlu/full/rNMVBGa?l=8&s=4&w=1&c=81d4fa&t=1
+  */
+}
+.numbered-content-list .numbered-content-item:last-child::after {
+  display: none;
+}
+
+.asms-svc-04-segment-02 .cards-list {
+  max-width: 1055px;
 }/*# sourceMappingURL=main.css.map */
