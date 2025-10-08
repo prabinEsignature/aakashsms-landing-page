@@ -23,11 +23,18 @@ $z-index-navbar-toggler: 1010;
 
   .asms {
     &-navbar-menu {
+      .menu-link-text{
+        color: color("night");
+      }
     }
 
     &-menu-link {
       &.active {
         color: color("primary") !important;
+
+        .menu-link-text{
+          color: color("primary") !important;
+        }
       }
 
       &:hover{

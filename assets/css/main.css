@@ -25403,6 +25403,12 @@ input[type=button].btn-block {
   margin-right: auto;
   width: 100%;
 }
+.segment-heading.mx-w-850 {
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
 
 .form-custom .form-select, .form-custom .form-control {
   height: 52px !important;
@@ -25842,7 +25848,13 @@ input:-webkit-autofill {
 .asms-navbar .asms-logo {
   max-width: 200px;
 }
+.asms-navbar .asms-navbar-menu .menu-link-text {
+  color: #121212;
+}
 .asms-navbar .asms-menu-link.active {
+  color: #3bb24a !important;
+}
+.asms-navbar .asms-menu-link.active .menu-link-text {
   color: #3bb24a !important;
 }
 .asms-navbar .asms-menu-link:hover {
@@ -26222,5 +26234,13 @@ input:-webkit-autofill {
 }
 
 .asms-svc-04-segment-02 .cards-list {
+  max-width: 1055px;
+}
+
+.asms-service-05-banner .service-05-split {
+  grid-template-columns: 55% auto;
+}
+
+.asms-svc-05-segment-02 .cards-list {
   max-width: 1055px;
 }/*# sourceMappingURL=main.css.map */
