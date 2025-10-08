@@ -26,11 +26,11 @@
 .spiral-arrow-shape {
   width: 60px;
 
-  @include breakpoint-down(lg){
+  @include breakpoint-down(lg) {
     width: 48px;
   }
 
-  @include breakpoint-down(sm){
+  @include breakpoint-down(sm) {
     width: 32px;
   }
 }
@@ -61,4 +61,39 @@
   @include breakpoint-down(xl) {
     display: none !important;
   }
+}
+
+.mx-w-640 {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.mx-w-725 {
+  max-width: 725px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.mx-w-900 {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.mx-w-850 {
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.mx-w-390 {
+  max-width: 390px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }

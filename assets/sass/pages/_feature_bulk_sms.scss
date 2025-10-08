@@ -88,8 +88,8 @@
   }
 }
 
-.asms-svc-04-segment-02{
-  .cards-list{
+.asms-svc-04-segment-02 {
+  .cards-list {
     max-width: 1055px;
   }
 }
@@ -100,8 +100,44 @@
   }
 }
 
-.asms-svc-05-segment-02{
-  .cards-list{
+.asms-svc-05-segment-02 {
+  .cards-list {
     max-width: 1055px;
+  }
+}
+
+.asms-svc-05-segment-03 {
+  .steps-block {
+    &-group {
+      max-width: 870px;
+    }
+
+    &-item {
+      grid-template-columns: auto 455px;
+
+      &-img {
+        img {
+          max-height: 380px;
+          width: auto;
+        }
+      }
+
+      &:nth-child(even) {
+        grid-template-columns: 455px auto;
+
+        .steps-block-item-img {
+          order: 2;
+        }
+        .steps-block-item-content {
+          order: 1;
+        }
+      }
+    }
+  }
+}
+
+.asms-svc-05-segment-04 {
+  .svc-05-segment-04-split {
+    grid-template-columns: auto 33%;
   }
 }

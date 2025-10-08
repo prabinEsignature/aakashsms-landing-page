@@ -24575,6 +24575,41 @@ a:visited, a:link {
   }
 }
 
+.mx-w-640 {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.mx-w-725 {
+  max-width: 725px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.mx-w-900 {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.mx-w-850 {
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.mx-w-390 {
+  max-width: 390px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
 .scrollbar-x {
   overflow-x: scroll;
 }
@@ -25383,31 +25418,6 @@ input[type=button].btn-block {
 
 [class*=icon] {
   speak: none;
-}
-
-.segment-heading.mx-w-640 {
-  max-width: 640px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-.segment-heading.mx-w-725 {
-  max-width: 725px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-.segment-heading.mx-w-900 {
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-.segment-heading.mx-w-850 {
-  max-width: 850px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
 }
 
 .form-custom .form-select, .form-custom .form-control {
@@ -26243,4 +26253,28 @@ input:-webkit-autofill {
 
 .asms-svc-05-segment-02 .cards-list {
   max-width: 1055px;
+}
+
+.asms-svc-05-segment-03 .steps-block-group {
+  max-width: 870px;
+}
+.asms-svc-05-segment-03 .steps-block-item {
+  grid-template-columns: auto 455px;
+}
+.asms-svc-05-segment-03 .steps-block-item-img img {
+  max-height: 380px;
+  width: auto;
+}
+.asms-svc-05-segment-03 .steps-block-item:nth-child(even) {
+  grid-template-columns: 455px auto;
+}
+.asms-svc-05-segment-03 .steps-block-item:nth-child(even) .steps-block-item-img {
+  order: 2;
+}
+.asms-svc-05-segment-03 .steps-block-item:nth-child(even) .steps-block-item-content {
+  order: 1;
+}
+
+.asms-svc-05-segment-04 .svc-05-segment-04-split {
+  grid-template-columns: auto 33%;
 }/*# sourceMappingURL=main.css.map */
