@@ -23880,7 +23880,8 @@ body {
   letter-spacing: normal;
 }
 
-.content-stylings p,
+.content-stylings.list-xl ul,
+.content-stylings.list-xl ol, .content-stylings p,
 .content-stylings ul,
 .content-stylings ol,
 .content-stylings dl, .content-stylings, p, .text-9xl, .text-8xl, .text-7xl-mid, .text-7xl, .text-6xl, .text-5xl, .text-4xl, .text-3xl, .text-2xl, .text-xl, .text-lg, .text-base, .text-sm, .text-xs, .text-2xs, .text-3xs {
@@ -24441,6 +24442,26 @@ a:visited, a:link {
 .content-stylings.content-sm ol,
 .content-stylings.content-sm ul {
   gap: 4px;
+}
+.content-stylings.list-xl ul,
+.content-stylings.list-xl ol {
+  font-size: 20px !important;
+}
+@media screen and (max-width: 1199.98px) {
+  .content-stylings.list-xl ul,
+  .content-stylings.list-xl ol {
+    font-size: 18px !important;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .content-stylings.list-xl ul,
+  .content-stylings.list-xl ol {
+    font-size: 16px !important;
+  }
+}
+.content-stylings.list-xl ul,
+.content-stylings.list-xl ol {
+  gap: 12px;
 }
 
 .animate-none {
@@ -26277,4 +26298,41 @@ input:-webkit-autofill {
 
 .asms-svc-05-segment-04 .svc-05-segment-04-split {
   grid-template-columns: auto 33%;
+}
+
+.asms-ind-01-banner .ind-01-split {
+  grid-template-columns: auto 42%;
+}
+
+.ind-split-block-item {
+  grid-template-columns: 45% auto;
+}
+.ind-split-block-item:nth-child(even) {
+  grid-template-columns: auto 45%;
+}
+.ind-split-block-item:nth-child(even) .ind-split-block-item-img {
+  order: 2;
+}
+.ind-split-block-item:nth-child(even) .ind-split-block-item-content {
+  order: 1;
+}
+
+.asms-ind-01-segment-01 .ind-split-block-group {
+  gap: 80px;
+}
+
+.asms-ind-02-segment-03 .ind-segment-split-group {
+  max-width: 830px;
+}
+.asms-ind-02-segment-03 .ind-segment-split-item {
+  grid-template-columns: 350px auto;
+}
+.asms-ind-02-segment-03 .ind-segment-split-item:nth-child(even) {
+  grid-template-columns: auto 350px;
+}
+.asms-ind-02-segment-03 .ind-segment-split-item:nth-child(even) .ind-segment-split-img {
+  order: 2;
+}
+.asms-ind-02-segment-03 .ind-segment-split-item:nth-child(even) .ind-segment-split-content {
+  order: 1;
 }/*# sourceMappingURL=main.css.map */

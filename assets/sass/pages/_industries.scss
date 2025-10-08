@@ -1,0 +1,56 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../mixins/scrollbar" as *;
+@use "../abstracts/functions" as *;
+
+.asms-ind-01-banner {
+  .ind-01-split {
+    grid-template-columns: auto 42%;
+  }
+}
+
+.ind-split-block {
+  &-item {
+    grid-template-columns: 45% auto;
+
+    &:nth-child(even) {
+      grid-template-columns: auto 45%;
+
+      .ind-split-block-item-img {
+        order: 2;
+      }
+      .ind-split-block-item-content {
+        order: 1;
+      }
+    }
+  }
+}
+
+.asms-ind-01-segment-01 {
+  .ind-split-block-group {
+    gap: 80px;
+  }
+}
+
+.asms-ind-02-segment-03 {
+  .ind-segment-split {
+    &-group {
+      max-width: 830px;
+    }
+    &-item {
+      grid-template-columns: 350px auto;
+
+      &:nth-child(even) {
+        grid-template-columns: auto 350px;
+
+        .ind-segment-split-img {
+          order: 2;
+        }
+        .ind-segment-split-content {
+          order: 1;
+        }
+      }
+    }
+  }
+}

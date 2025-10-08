@@ -256,16 +256,17 @@ a {
     }
   }
 
-  b, strong{
+  b,
+  strong {
     // font-weight: 600;
   }
 
-  a{
-    color: color("primary")!important;
+  a {
+    color: color("primary") !important;
     transition: $default-transition;
 
-    &:hover{
-      color: color("p-green-700")!important;
+    &:hover {
+      color: color("p-green-700") !important;
     }
   }
 
@@ -336,6 +337,7 @@ a {
     }
   }
 
+  // CONTENT STYLINGS VARIANTS
   &.content-sm {
     p,
     ul,
@@ -346,6 +348,18 @@ a {
     ol,
     ul {
       gap: 4px;
+    }
+  }
+
+  // ELEMENTS SIZES VARIANTS
+  &.list-xl {
+    ul,
+    ol {
+      @include text-font-sizes(map.get($text-sizes, xl));
+
+      & {
+        gap: 12px;
+      }
     }
   }
 }
